@@ -1,4 +1,5 @@
 :root{
+    --bg-0: #a8b1cc;
     --bg-1: #acadbc;
     --bg-2: #a4a7d8;
     --bg-3: #faf9f6;
@@ -17,7 +18,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(10deg, var(--bg-1), var(--bg-2));
+    background: linear-gradient(90deg, var(--bg-0), var(--bg-1), var(--bg-2));
     padding: 10px;
 }
 
@@ -75,7 +76,7 @@ button{
 ul li{
     list-style: none;
     font-size: 22px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 60px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -92,6 +93,7 @@ ul li::before{
     background-position: center;
     top: 7px;
     left: 8px;
+    cursor: pointer;
 }
 
 ul li.checked{
@@ -120,13 +122,12 @@ ul li span:hover{
     background: var(--bg-4);
 }
 
-.draggable {
-    padding: 1rem;
+/* .draggable {
     cursor: move;
-  }
+  } */
 
 .draggable.dragging {
     opacity: 0.5;
     background: #dcdcdc;
-    border: 2px dashed #9b9ece;
+    border: 2px dashed var(--bg-4);
   }
